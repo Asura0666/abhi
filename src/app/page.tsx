@@ -26,7 +26,7 @@ export default async function Home({
       (currentPage - 1) * pageSize + (currentPage === 1 ? 0 : heroItemCount),
     take: pageSize + (currentPage === 1 ? heroItemCount : 0),
   });
-
+  
   return (
     <div className="flex flex-col items-center">
       {currentPage === 1 && (
