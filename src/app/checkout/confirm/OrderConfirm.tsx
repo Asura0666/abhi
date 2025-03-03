@@ -119,7 +119,7 @@ export default function OrderConfirm() {
       key: process.env.RAZORPAY_KEY_ID,
       amount: orderResponse.amount * 100, // Convert to paise
       currency: "INR",
-      name: "E Mart",
+      name: "Flowmazon",
       description: "Complete your purchase",
       order_id: orderResponse.orderId,
       handler: async function (response: any) {
